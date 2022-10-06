@@ -1,0 +1,228 @@
+<?php
+$a = 'Мои знания на';
+$b = 100;
+$с = '%'; 
+?>
+
+<?php
+  $цена = 15;
+
+  if($цена >= 15 && $цена <= 20)
+      $d = 'Это число находится между 15 и 20';
+?>
+    <div class="logo"> 
+                <img src="img/l.png" alt="php">
+                </div>           
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Practice </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div class="flex-container">
+
+        <div class="header">     
+               <?php include 'logo.inc.php' ?>         
+               <?php include 'menu.inc.php' ?>	   
+        </div>       
+     
+        <div class="about_me">
+         
+          <h1>  <?php  echo $p  ?> </h1>
+
+            <div class="data">
+                <div class="myImg">
+                    <?php  echo '<img src="img/haсker.jpg">'; ?>                    
+                </div>
+
+                <div class="fullname">
+                    <p> Меня зовут 
+                    <?php echo $name, ' ', $surname . '<br>'; 
+                          echo 'город', ' ', $city; ?>                                      
+                    </p> 
+           
+                    <p> Мне
+                    <?php  echo $age;   ?>          
+                    лет </p>
+                    <p> Мы научились создавать переменные </p>
+                    <p> Изучили простые операции с ними </p>
+                </div>
+            </div>
+
+            <div class="knowledge">
+                                   
+                    <?php  include 'knowledge.inc.php'; ?>
+                    <?php   echo $a, ' ', $b, ' ', $c; ?> <br>
+                                       
+                    <?php
+                        $a = 10;
+                        $b = 20;
+                        $c = $a + $b;
+                        echo $c;
+                    ?>   <br>                
+                     <?php
+                        echo $d;
+                    ?> 
+
+            </div>
+
+            <div class="article">
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Recusandae asperiores ducimus dolore explicabo. Animi est amet quibusdam molestias! 
+                    Minus laudantium sapiente dignissimos possimus natus cumque delectus sed, accusantium totam quia?
+                </p>
+            </div>
+        </div>
+
+            <?php include 'footer.inc.php' ?>
+
+    </div>
+
+
+</body>
+</html>
+ <nav>
+                <ul>
+                    <li><a href="#"> About my studies </a></li>
+                    <li><a href="#"> My portfolio </a></li>
+                    <li><a href="#"> My articles </a></li>
+                    <li><a href="#"> Links </a></li>
+                    <li><a href="#"> Contacts </a></li>
+                </ul>    
+            </nav>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&display=swap" rel="stylesheet');
+
+html,
+body {
+    height: 100%;
+}
+
+.greetings,
+p,
+h1, 
+h2 {
+    font-family: 'Noto Serif JP', serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #000000;
+    padding: 5px;
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 25%;
+    margin-bottom: 3em;
+    background-color:#FF0000;
+}
+
+ul  {
+    display: flex;
+    list-style-type: none;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+li a {
+    text-decoration: none;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 800;
+}
+
+.logo img {
+    width: 190px;
+    height: 70px;
+    margin-left: 10px;
+}
+
+.about_me {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+}
+
+.data {
+    display: flex;
+    align-items: center;
+}
+
+.fullname {
+    margin-right: 20px;
+    flex-basis: 750px;
+}
+
+.myImg {
+    margin-top: 150px;
+    padding-left: 20px;
+    flex-basis: 450px;
+}
+
+.knowledge {
+    display: flex;   
+    justify-content: center;
+}
+
+.article {
+    margin-top: 2em;   
+}
+
+
+p {
+    font-size: 1.2rem;
+    color: #000000;
+    padding-left: 20px;
+}
+
+.text {
+    font-size: 1rem;
+    color: #000000;
+}
+
+h2 {
+    text-align: center;
+    color: #424242;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.footer {
+    background-color: #000000;
+    flex: 0 0 auto;
+<div class="нижний колонтитул">
+            <h2>Я выучил php,ну почти!</h2>
+        </div>
+<?php 
+ $p = 'Моя страничка,посмотрели и хватит!';
+?>
+
+<?php 
+ $name = 'Рома';
+ $surname = 'Громов';
+ $city = 'Алматы';
+ $age = 25;
+?>
+
+
+<?php
+include 'main.php';
+?>
